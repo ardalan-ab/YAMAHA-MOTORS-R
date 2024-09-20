@@ -1,0 +1,18 @@
+.header{
+ width: 100%;
+ background-color: $header_backgrund; 
+ height: 10vh;  
+
+
+
+ &__logo{
+    height: 100%;
+
+
+    &__img{
+        height: 100%;
+        color: white;
+    }
+ }
+
+}
