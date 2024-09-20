@@ -12,8 +12,16 @@ a {
   display: inline-block;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 .header {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
   height: 10vh;
 }

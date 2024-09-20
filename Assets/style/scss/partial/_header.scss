@@ -1,7 +1,11 @@
 .header{
  width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
  background-color: $header_backgrund; 
  height: 10vh;  
+
 
 
 
