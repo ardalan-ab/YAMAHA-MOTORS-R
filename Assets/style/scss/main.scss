@@ -1,12 +1,16 @@
 
+// variable
+@import "./partial/variables";
+// animation
+@import "./partial/animation";
 
 // Global
 @import "./partial/reset";
-// variable
-@import "./partial/variables";
 
 
 // header
 @import "./partial/header";
 //  slide1
-@import "./partial/slide"
+@import "./partial/slide";
+// section2
+@import "./partial/shoppingtools";

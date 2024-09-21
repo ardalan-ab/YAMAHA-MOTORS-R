@@ -1,0 +1,111 @@
+.fade-in-left {
+    animation: fade-in-left 0.6s 15s   both;
+
+}
+
+
+
+@keyframes fade-in-left {
+  0% {
+   
+    
+    opacity: 0;
+  }
+
+
+  100%{
+    opacity: 1;
+  }
+}
+.shadow-pop-br {
+	
+	        animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+  @keyframes shadow-pop-br {
+    0% {
+   
+              box-shadow: 0 0 $blue, 0 0 $blue, 0 0 $blue, 0 0 $blue, 0 0 $blue, 0 0 $blue, 0 0 $blue, 0 0 $blue;
+      
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      
+              box-shadow: 1px 1px $blue, 2px 2px $blue, 3px 3px $blue, 4px 4px $blue, 5px 5px $blue, 6px 6px $blue, 7px 7px $blue, 8px 8px $blue;
+     
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+  .scale-up-center {
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+  @keyframes scale-up-center {
+    0% {
+     
+              transform: scale(0.5);
+    }
+    100% {
+  
+              transform: scale(1.1);
+    }
+  }
+  .bounce-top {
+
+	        animation: bounce-top 0.9s both;
+}
+
+
+  @keyframes bounce-top {
+    0% {
+ 
+              transform: translateY(-45px);
+    
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+ 
+              transform: translateY(-24px);
+     
+              animation-timing-function: ease-in;
+    }
+    65% {
+
+              transform: translateY(-12px);
+   
+              animation-timing-function: ease-in;
+    }
+    82% {
+
+              transform: translateY(-6px);
+    
+              animation-timing-function: ease-in;
+    }
+    93% {
+
+              transform: translateY(-4px);
+     
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+
+              transform: translateY(0px);
+    
+              animation-timing-function: ease-out;
+    }
+    100% {
+
+              transform: translateY(0px);
+     
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  

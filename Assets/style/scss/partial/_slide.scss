@@ -2,17 +2,186 @@
 
 .slide{
   width: 100%;
+  position: relative;
 
 
+ &__line{
+
+  background-color: $blue;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+height: 6px ;
+
+
+ }
 
   &__video{
     width: 100%;
   }
+  &__box{
+ 
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: linear-gradient( to bottom, black 50%,$blue 50% );
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    
+
+
+    &__img{
+     width: 40%;
+      position: absolute;
+      top: -80%;
+      right: 50%;
+      transform: translateX(50%);
+     
+    }
+   .m1{
+    margin-top: 0.25rem;
+   }
+
+    h3{
+      flex: 1;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      color:wheat;
+      filter: drop-shadow(1px 10px 15px $blue);
+      margin: 0;
+    font-size: 0.5rem;
+
+  
+
+    }
+
+
+  }
+  .scroll{
+    width: 2%;
+  
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    img{
+      width: 100%;
+    }
+
+
+  }
+
+  .badge{
+    
+    text-align: center;
+   position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50% ,50%);
+    img{
+      width: 100%;
+    }
+
+
+  }
 
   }
   .parallelogram {
-    width: 100px;
-    height: 50px;
-    transform: skew(20deg);
-    background: #555;
+
+    width: 50px;
+    height: 25px;
+    transform: skew(-20deg);
+    
+   
+
+  }
+
+
+
+
+
+
+// first-break
+
+  @media screen and (min-width:576px){
+    .slide{
+
+
+ 
+
+      &__line{
+        display: block;
+      }
+      &__box{
+
+        h3{
+
+          font-size: 1rem;
+   
+
+
+        }
+
+      }
+
+
+
+
+    }
+
+
+    .parallelogram {
+
+      width: 100px;
+      height: 50px;
+      transform: skew(-20deg);
+      
+     
+  
+    }
+
+
+
+  }
+
+  @media screen and (min-width:768px){
+    .slide{
+      .m1{
+
+        margin-top: 0.5rem;
+      }
+      &__box{
+
+        h3{
+
+          font-size: 1.5rem;
+
+
+
+        }
+
+      }
+
+
+
+
+    }
+
+
+    .parallelogram {
+
+      width: 200px;
+      height: 100px;
+      transform: skew(-20deg);
+      
+     
+  
+    }
+
+
+
   }
