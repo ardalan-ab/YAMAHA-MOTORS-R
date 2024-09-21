@@ -108,4 +108,24 @@
       opacity: 1;
     }
   }
-  
+  .text-shadow-drop-top {
+
+	        animation: text-shadow-drop-top 0.6s both;
+}
+
+  @keyframes text-shadow-drop-top {
+    0% {
+      text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    100% {
+      text-shadow: 0 -6px 18px rgba(255, 255, 255, 0.35);
+    }
+  }
+  @keyframes bounce {
+    from {
+      transform: translateX(-50%) translateY(0);
+    }
+    to {
+      transform: translateX(-50%) translateY(-50px);
+    }
+}
