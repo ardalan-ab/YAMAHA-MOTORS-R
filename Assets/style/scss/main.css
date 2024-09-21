@@ -7,9 +7,9 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
+  text-decoration: none !important;
+  color: inherit !important;
+  display: inline-block !important;
 }
 
 .container {
@@ -17,18 +17,89 @@ a {
   margin: auto;
 }
 
+#main {
+  transition: margin-left 0.5s;
+}
+
 .header {
   width: 100%;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.459);
+  height: 10vh;
+}
+.header__container {
   display: flex;
+  width: 80%;
+  margin: auto;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 10vh;
+  border-bottom: 2px solid #1b3e90;
+  padding-bottom: 0.5rem;
+}
+.header__nav {
+  font-size: 1.25rem;
+  color: rgb(187, 187, 187);
+}
+.header__nav__bar {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+.header__nav__bar__menu {
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1b3e90;
+  color: rgb(187, 187, 187);
+  padding-top: 2rem;
+  padding-left: 0;
+  transition: 1s;
+  text-align: center;
+}
+.header__nav__bar__menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+.header__nav__bar__text {
+  font-size: 1rem;
 }
 .header__logo {
   height: 100%;
 }
 .header__logo__img {
   height: 100%;
-  color: white;
+  width: 100%;
+  fill: rgb(255, 255, 255);
+}
+.header__dealer {
+  color: rgb(187, 187, 187);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.fade {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+}
+.slide__video {
+  width: 100%;
+}
+
+.parallelogram {
+  width: 100px;
+  height: 50px;
+  transform: skew(20deg);
+  background: #555;
 }/*# sourceMappingURL=main.css.map */
