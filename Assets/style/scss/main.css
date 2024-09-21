@@ -171,6 +171,9 @@ a {
   gap: 6px;
   position: relative;
 }
+.header__nav__bar:hover {
+  color: #194eca !important;
+}
 .header__nav__bar__menu {
   overflow: hidden;
   position: fixed;

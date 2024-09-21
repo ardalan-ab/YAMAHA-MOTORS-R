@@ -47,6 +47,9 @@ padding-bottom: 0.2rem;
     align-items: center;
     gap: 6px;
     position: relative;
+    &:hover {
+        color: $blue__hover !important;
+    }
 
     &__menu{
         overflow: hidden;
