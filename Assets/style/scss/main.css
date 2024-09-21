@@ -344,13 +344,6 @@ a {
   align-items: center;
   color: rgb(187, 187, 187);
 }
-.shoptools__box a {
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-.shoptools__box i {
-  font-size: 2.5rem;
-}
 .shoptools__box:hover {
   color: #194eca;
 }

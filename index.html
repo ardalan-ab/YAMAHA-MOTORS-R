@@ -76,28 +76,26 @@
       </div>
       <div class="slide__line"></div>
     </section>
-    <section class="shoptools row " >
-        <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in" >
-            <i class="fa-regular fa-pen-to-square"></i>
-            <a  href="#">CURRENT OFFERS</a>
-        </div>
+    <section class="shoptools row">
+      <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+        <i class="fa-regular fa-pen-to-square fs-1"></i>
+        <a class="fs-6" href="#">CURRENT OFFERS</a>
+      </div>
 
-        <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in" >
-            <i class="fa-solid fa-calculator"></i>
-            <a href="#">PAYMENT CACULATOR</a>
-        </div>
+      <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+        <i class="fa-solid fa-calculator fs-1"></i>
+        <a class="fs-6" href="#">PAYMENT CACULATOR</a>
+      </div>
 
-        <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in" >
-            <i class="fa-solid fa-cart-shopping"></i>
-            <a href="#">SHOP NOW</a>
-        </div>
+      <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+        <i class="fa-solid fa-cart-shopping fs-1"></i>
+        <a class="fs-6" href="#">SHOP NOW</a>
+      </div>
 
-        <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in" >
-            <i class="fas fa-location-dot"></i>
-            <a href="#">FIND YOUR DEALER</a>
-        </div>
-
-
+      <div class="shoptools__box col-12 col-sm-6 col-md-3 " data-aos="zoom-in">
+        <i class="fas fa-location-dot fs-1"></i>
+        <a class="fs-6" href="#">FIND YOUR DEALER</a>
+      </div>
     </section>
 
     <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
@@ -114,7 +112,6 @@
         }
       }
     </script>
-
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -124,35 +121,32 @@
         document.getElementById("mySidenav").style.width = "0";
       }
     </script>
-      <script src="./Assets/aos-master/dist/aos.js"></script>
-      <script>
-    
-        AOS.init();
+    <script src="./Assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
 
-// You can also pass an optional settings object
-// below listed default settings
-AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
+      // You can also pass an optional settings object
+      // below listed default settings
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
-      </script>
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
