@@ -131,12 +131,14 @@
 }
 @keyframes flexgrow {
     from{
+      
         flex: 1;
         flex-direction: row;
 
     }
     to{
-        flex: 2;
+  
+        flex: 3;
         flex-direction: row;
 
 
@@ -165,7 +167,7 @@
       }
       @keyframes colorchanger {
         from{
-            color: #8b8b8b8f;
+            color: #8b8b8b13;
             text-shadow: 1px 1px 1px;
         }
         to{
