@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
     
     &__heading{
 
@@ -44,26 +45,7 @@
     }
 }
 
-.arrow{
 
-    display: flex !important;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    color: $white !important;
-    bottom: 1%;
-    left: 50%;
-    transform: translateX(-50%);
-    // text-align: center;
-    i{
-      
-        animation: bounce 0.5s 2s infinite alternate;
-    }
-    
-
-
-}
 // first-break
 @media screen and (min-width:576px){
     .speed{

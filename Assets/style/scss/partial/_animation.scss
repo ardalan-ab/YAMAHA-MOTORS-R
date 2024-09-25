@@ -129,3 +129,48 @@
       transform: translateX(-50%) translateY(-50px);
     }
 }
+@keyframes flexgrow {
+    from{
+        flex: 1;
+        flex-direction: row;
+
+    }
+    to{
+        flex: 2;
+        flex-direction: row;
+
+
+    }
+
+
+
+} 
+      @keyframes goo {
+        0%{
+            border: none;
+        }
+        25%{
+            border-left: 4px solid;
+        }
+        50%{
+            border-top: 4px solid;
+        }
+        75%{
+            
+        border-right: 4px solid;
+        }
+        100%{
+            border-bottom: 4px solid;
+        }
+      }
+      @keyframes colorchanger {
+        from{
+            color: #8b8b8b8f;
+            text-shadow: 1px 1px 1px;
+        }
+        to{
+            color: white;
+
+        }
+        
+      }
