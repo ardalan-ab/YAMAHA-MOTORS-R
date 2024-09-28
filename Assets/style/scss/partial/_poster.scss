@@ -1,0 +1,60 @@
+.poster{
+    width: 100%;
+    position: relative;
+    &__bages{
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+    }
+    &__img{
+        width: 100%;
+        position: relative;
+
+
+
+ 
+        img{
+            width: 100%;
+        }
+    }
+
+}
+.model{
+    position: absolute;
+    bottom: 0;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    width: 100%;
+
+    h1{
+        color: white;
+        text-align: center;
+        margin: 0;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+
+
+}
+
+
+.primery__btn{
+
+    color: white !important;   
+    background-color: $blue;
+    text-align: center;
+    padding: 0.25rem;
+}
+.scondary__btn{
+    background-color: transparent; 
+    color: white !important;
+    border: 2px solid;
+    text-align: center;
+    padding: 0.25rem;
+}

@@ -176,3 +176,40 @@
         }
         
       }
+
+      .scale_up{
+        animation: scale_up 1s linear   forwards ;
+      }
+
+      @keyframes scale_up {
+        0%{
+          scale: 0.25;
+          z-index: -1;
+          transform: translate(50%,80%);
+
+        }
+        33%{
+          scale: 0.5;
+        }
+        66%{
+          scale: 0.75;
+          transform: translate(25%,-40%);
+        }
+        100%{
+          scale: 1;
+          transform: translate(0,0);
+        }
+        
+
+        
+      }
+
+      .fading {
+        animation-name: fading;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fading {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }

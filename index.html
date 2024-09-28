@@ -89,6 +89,7 @@
       </div>
       <div class="slide__line"></div>
     </section>
+    <!-- second-section -->
     <section class="shoptools row">
       <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in">
         <i class="fa-regular fa-pen-to-square fs-1"></i>
@@ -110,19 +111,38 @@
         <a class="fs-6" href="#">FIND YOUR DEALER</a>
       </div>
     </section>
+      <!-- third-section -->
     <section class="speed">
       <h3 class="speed__heading" data-aos="fade-in">FEEL THE REAL SPEED</h3>
       <img
         data-aos="fade-in"
         data-aos-duration="3000"
-        src="./Assets/images/output-onlinejpgtools.jpg"
+        src="./Assets/images/r1lights.jpg"
         alt="r1light"
       />
       <h6 class="speed__heading">R1 AND R1M NEW MODEL</h6>
     </section>
-    <div class="product__header"><span><h3>MODELS</h3></span></div>
+    <div class="section__header d-none d-lg-block"><span><h3>46 LEGEND</h3></span></div>
+    <section class="legend">
+      <div class="legend__box">
+
+      <img class="legend__box__racer" data-aos="fade-down"  src="./Assets/images/rossi2.jpg" alt="">
+        <img class="legend__box__character"data-aos="fade-in"  src="./Assets/images/rossi-valentino.png" alt="">
+        <div class="legend__box__caption"data-aos="fade-right" >
+        <h2>VALENTINO ROSSI</h2>
+        <p>Valentino Rossi is an Italian racing driver, former professional motorcycle road racer and nine-time Grand Prix motorcycle racing World Champion. Of Rossi's nine Grand Prix World Championships, seven were in the premier 500cc/MotoGP class</p>
+      </div>
+    
+    
+    </div>
+
+   
+
+    </section>
+     <!-- 4th-section -->
+    <div class="section__header"><span><h3>MODELS</h3></span></div>
     <section class="product" id="product"  data-aos="fade-in">
-      <div class="product__card" data-aos="fade-left"
+      <div class="product__card" data-aos="fade-right"
       data-aos-duration="1500">
         <div class="product__image"><img src="./Assets/images/YZFR1MS.png" alt="R1M" /></div>
 
@@ -175,6 +195,7 @@
             <a class="product__card__btn hvr-sweep-to-right" href="">EXPLORE</a></div>
       </div>
     </section>
+       <!-- footer -->
     <footer class="py-5 footer" data-aos="fade-in"
     data-aos-duration="1500">
         <div class="row justify-content-center">
@@ -220,19 +241,7 @@
       </footer>
 
     <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
-    <script>
-      window.addEventListener("scroll", handleScroll);
 
-      function handleScroll() {
-        const title = document.querySelector(".header__logo__img");
-
-        if (window.scrolly > 50) {
-          title.classList.add("fade");
-        } else {
-          title.classList.remove("fade");
-        }
-      }
-    </script>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -299,5 +308,6 @@
                 }
             });
             </script>
+
   </body>
 </html>
