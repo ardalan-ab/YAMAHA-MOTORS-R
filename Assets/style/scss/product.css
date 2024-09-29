@@ -408,18 +408,20 @@ a {
   width: 100%;
   position: relative;
 }
+.poster__bg {
+  height: 100%;
+  width: 100%;
+}
+.poster__bg__img {
+  height: 100%;
+  width: 100%;
+}
 .poster__bages {
-  z-index: 2;
+  width: 100% !important;
   position: absolute;
+  z-index: 4;
   top: 0;
   left: 0;
-}
-.poster__img {
-  width: 100%;
-  position: relative;
-}
-.poster__img img {
-  width: 100%;
 }
 
 .model {
@@ -453,4 +455,12 @@ a {
   border: 2px solid;
   text-align: center;
   padding: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .model {
+    width: 30%;
+    bottom: 30%;
+    background-color: rgba(0, 0, 0, 0.295);
+  }
 }/*# sourceMappingURL=product.css.map */
