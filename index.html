@@ -4,21 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YamhaMotors</title>
+    <!-- favicon -->
     <link
       rel="icon"
       type="image/x-icon"
       href="./Assets/images/favicon/yamaha-favicon.svg"
     />
+    <!-- main-style -->
     <link rel="stylesheet" href="./Assets/style/css/main.css" />
+    <!-- fontawsome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      href="./Assets/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css"
     />
+    <!-- bootstrap -->
     <link
       rel="stylesheet"
       href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.css"
     />
+    <!-- scroll-libary -->
     <link rel="stylesheet" href="Assets/aos-master/dist/aos.css" />
+    <!-- hover-libary -->
     <link
       rel="stylesheet"
       href="./Assets/Hover-master/Hover-master/css/hover.css"
@@ -123,6 +129,7 @@
       <h6 class="speed__heading">R1 AND R1M NEW MODEL</h6>
     </section>
     <div class="section__header d-none d-lg-block"><span><h3>46 LEGEND</h3></span></div>
+    <!-- 4th-section -->
     <section class="legend">
       <div class="legend__box">
 
@@ -139,7 +146,7 @@
    
 
     </section>
-     <!-- 4th-section -->
+     <!-- 5th-section -->
     <div class="section__header"><span><h3>MODELS</h3></span></div>
     <section class="product" id="product"  data-aos="fade-in">
       <div class="product__card" data-aos="fade-right"
@@ -239,9 +246,9 @@
         
               
       </footer>
-
+<!-- bootstrap script -->
     <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
-
+<!-- header-script -->
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -251,33 +258,9 @@
         document.getElementById("mySidenav").style.width = "0";
       }
     </script>
-    <script src="./Assets/aos-master/dist/aos.js"></script>
-    <script>
-      AOS.init();
 
-      // You can also pass an optional settings object
-      // below listed default settings
-      AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: "aos-init", // class applied after initialization
-        animatedClassName: "aos-animate", // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 400, // values from 0 to 3000, with step 50ms
-        easing: "ease", // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
-      });
-    </script>
+  
+    
     <script>
     window.addEventListener('scroll', function() {
       const element = document.querySelector('.header');
@@ -291,7 +274,7 @@
       <script>
         window.addEventListener('scroll', function() {
           const element = document.querySelector('.header__logo__img');
-          if (window.scrollY > 200) { // Change 100 to the desired scroll position
+          if (window.scrollY > 200) {
               element.classList.add('color_change');
           } else {
               element.classList.remove('color_change');
@@ -301,13 +284,43 @@
             <script>
               window.addEventListener('scroll', function() {
                 const element = document.querySelector('.yamaha__heading');
-                if (window.scrollY > 200) { // Change 100 to the desired scroll position
+                if (window.scrollY > 200) { 
                     element.classList.add('d-none');
                 } else {
                     element.classList.remove('d-none');
                 }
             });
             </script>
+            <!-- libary-script -->
+              <script src="./Assets/aos-master/dist/aos.js">
+
+              </script>
+              <script>
+                AOS.init();
+          
+                // You can also pass an optional settings object
+                // below listed default settings
+                AOS.init({
+                  // Global settings:
+                  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                  startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+                  initClassName: "aos-init", // class applied after initialization
+                  animatedClassName: "aos-animate", // class applied on animation
+                  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+          
+                  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                  offset: 120, // offset (in px) from the original trigger point
+                  delay: 0, // values from 0 to 3000, with step 50ms
+                  duration: 400, // values from 0 to 3000, with step 50ms
+                  easing: "ease", // default easing for AOS animations
+                  once: false, // whether animation should happen only once - while scrolling down
+                  mirror: false, // whether elements should animate out while scrolling past them
+                  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+                });
+              </script>
 
   </body>
 </html>
