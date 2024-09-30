@@ -460,7 +460,123 @@ a {
 @media screen and (min-width: 768px) {
   .model {
     width: 30%;
-    bottom: 30%;
+    z-index: 6;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.295);
+    height: 100%;
   }
+  .model h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+  .model .primery__btn {
+    color: white !important;
+    background-color: #1b3e90;
+    text-align: center;
+    padding: 1rem;
+    transition: 1s;
+  }
+  .model .scondary__btn {
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid;
+    text-align: center;
+    padding: 1rem;
+    transition: 1s;
+  }
+  .model .primery__btn:hover {
+    background-color: #194eca;
+  }
+  .model .scondary__btn:hover {
+    background-color: #1b3e90;
+  }
+}
+.discription {
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  padding: 1rem;
+}
+.discription__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.discription__content__text {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+.discription__content__icons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.discription__content__icons h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-wrap: nowrap;
+  font-size: 1.5rem;
+}
+.discription__content__icons h6 {
+  font-size: 1rem;
+  text-wrap: nowrap;
+}
+.discription__content__img {
+  width: 50%;
+  height: 50%;
+}
+.discription__content__img img {
+  width: 100%;
+}
+
+.discription__content__text__head {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid;
+}
+
+@media screen and (min-width: 1200px) {
+  .discription__content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .discription__content__text {
+    flex-direction: row;
+    width: 60%;
+    gap: 1rem;
+    height: auto;
+    flex: 1;
+  }
+  .discription__content__text h1 {
+    font-size: 2rem;
+  }
+  .discription__content__text h6 {
+    font-size: 1.5rem;
+  }
+  .discription__content__img {
+    width: 40%;
+    height: auto;
+  }
+}
+.footer {
+  background-color: rgb(15, 15, 15);
+  color: white !important;
+  border-top: 10px solid #1b3e90;
+  overflow: hidden;
+}
+
+.text-mutedd {
+  color: rgba(79, 125, 171, 0.75) !important;
 }/*# sourceMappingURL=product.css.map */

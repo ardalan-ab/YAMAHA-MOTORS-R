@@ -682,6 +682,7 @@ h5 {
   background-color: rgb(15, 15, 15);
   color: white !important;
   border-top: 10px solid #1b3e90;
+  overflow: hidden;
 }
 
 .text-mutedd {
