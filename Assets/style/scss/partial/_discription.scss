@@ -68,7 +68,7 @@
 
 
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:992px){
     .discription{
         &__content{
             flex-direction: row;
@@ -79,6 +79,7 @@
                 width: 60%;
                 gap: 1rem;
                 height: auto;
+                justify-content: space-evenly;
                 flex: 1;
                 h1{
                     font-size: 2rem;
@@ -99,7 +100,29 @@
 
 
     }
+    .discription__content__text__container{
+
+        gap: 1rem;
+    }
 
 
 
+}
+
+
+
+@media screen and (min-width:1200px){
+
+.discription{
+    &__content{
+        .d-xlg-block{
+            display: block !important;
+    
+    
+        }
+    }
+}
+
+
+  
 }

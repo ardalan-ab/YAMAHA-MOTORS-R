@@ -546,7 +546,7 @@ a {
   border-bottom: 2px solid;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .discription__content {
     flex-direction: row;
     justify-content: space-between;
@@ -557,6 +557,7 @@ a {
     width: 60%;
     gap: 1rem;
     height: auto;
+    justify-content: space-evenly;
     flex: 1;
   }
   .discription__content__text h1 {
@@ -568,6 +569,14 @@ a {
   .discription__content__img {
     width: 40%;
     height: auto;
+  }
+  .discription__content__text__container {
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .discription__content .d-xlg-block {
+    display: block !important;
   }
 }
 .footer {
